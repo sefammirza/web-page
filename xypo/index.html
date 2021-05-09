@@ -42,9 +42,65 @@
         </ul>
     </nav>
     <img src="images/menu.png" id="menuBtn">
+
+<section id="about">
+    <div class="about-left-col">
+        <img src="images/about.png">
+    </div>
+    <div class="about-right-col">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <span class="square"></span>
+            <p>
+                The purpose is to teach, bring learning to people
+                The purpose is to teach, bring learning to people
+                The purpose is to teach, bring learning to people
+                The purpose is to teach, bring learning to people
+            </p>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <h2>
+                The purpose is to teach, bring learning to people
+                The purpose is to teach, bring learning to people
+            </h2>
+            <h3>
+                ----Agile Adams
+            </h3>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="features">
+    <div class="feature-row">
+        <div class="feautare-col"></div>
+        <div class="feautare-col"></div>
+        <div class="feautare-col"></div>
+    </div>
+</section>
+
+
+
+
+
+
     <script>
         var menuBtn = document.getElementById("menuBtn")
         var sideNav = document.getElementById("sideNav")
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
     </script>
 </body>
 </html>
