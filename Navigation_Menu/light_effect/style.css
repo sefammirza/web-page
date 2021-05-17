@@ -48,4 +48,35 @@
     inset 0 0 20px #08f,
     0 0  320px 30px #08f,
     inset 0 0 20px #08f;
+    animation: run 5s linear infinite;
+}
+@keyframes run {
+    0%{
+        left: 10%;
+        opacity: 0;
+    }
+    2%{
+        left: 10%;
+        opacity: 1;
+    }
+    4%{
+        left: 10%;
+        opacity: 0;
+    }
+    6%{
+        left: 10%;
+        opacity: 1;
+    }
+    8%{
+        left: 10%;
+        opacity:0;
+    }
+    10%{
+        left: 10%;
+        opacity:1;
+    }
+    100%{
+        left: 90%;
+        opacity:1;
+    }
 }
