@@ -13,6 +13,11 @@
     --black2:#333;
 
 }
+.dark{
+    --black:#fff;
+    --white:#113828;
+    --black2:#124e36;  
+}
 section{
     position:relative;
     width: 100%;
@@ -70,6 +75,12 @@ header ul li a{
     z-index: 2;
     margin-right: 20px;
 }
+.dark .content .textBox h2 span{
+    color: #00ff9b;
+}
+.content .textBox p{
+    color: var(--black);
+}
 .content .textBox h2{
     font-size: 3em;
     color: var(--black);
@@ -111,4 +122,75 @@ header ul li a{
     position:relative;
     z-index:1;
     max-width: 350px;
+}
+.sci{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background: var(--black2);
+    color: var(--white2);
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.sci li a .fa{
+   font-size: 1.2em; 
+}
+.sci li a:hover {
+    background: var(--green);
+}
+.themeSwitch{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--black);
+    display: inline-flex;
+    border-radius:50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before{
+    content: '\f186';
+    font-family: fontAwesome;
+    color:var(--white);
+    font-size: 20px;
+}
+.themeSwitch.active::before{
+    content: '\f185';
+}
+@media (max-width:991px){
+    section{
+        padding: 150px 20px;
+    }
+    header{
+        padding: 20px;
+    }
+    .sci{
+        bottom: 20px;
+        left: 20px;
+    }
+    .contect{
+        flex-direction: column-reverse;
+    }
+    .content .textBox,
+    .content .imgBox{
+        max-width: 100%;
+        margin-right: 0px;
+    }
 }
