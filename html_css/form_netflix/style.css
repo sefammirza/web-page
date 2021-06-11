@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+  margin: auto;
+  position: fixed;
+}
+.contenier{
+    position: relative;
+    background: rgb(70, 57, 57);
+    box-shadow: 0 15px 50px rgb(0 0 0 / 10%);
+    max-width: 500px;
+    margin-top: 100px;
+    width: 80%;
+    margin:100px auto;
+    overflow: hidden;
+
+}
+.inputbox{
+    margin-bottom: 20px;
+    display: flex;
+}
+.inputbox label{
+    width:100%;
+    padding: 15px 15px;
+}
