@@ -855,6 +855,12 @@ ul.social-list li:nth-child(4) a:hover{
         padding-right: var(--pad-right);
         padding-left: var(--pad-left);
     }
+    .contact-content h2{
+        font-size: 2rem;
+    }
+    .footer-content{
+        grid-template-columns:2fr 1fr 1fr;
+    }
 }
 
 .nav-active{
