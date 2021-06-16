@@ -809,7 +809,52 @@ ul.social-list li:nth-child(4) a:hover{
 }
 
 @media only screen and (max-width:768px){
-    
+    .main-title{
+        font-size: 6rem;
+        color: red;
+    }
+    .main-slogan{
+        font-size: 1.2rem;
+        letter-spacing: 1.2rem;
+    }
+    .sec-grid{
+        grid-template-columns: 1fr;
+    }
+    .about-image{
+        padding-left: var(--pad-left);
+    }
+    .services-image{
+        padding-right: var(--pad-right);
+    }
+    .portfolio-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'item-1 item-1 item-3 item-3'
+        'item-1 item-1 item-2 item-2'
+        'item-7 item-7 item-4 item-4'
+        'item-6 item-6 item-4 item-4'
+        'item-5 item-5 item-8 item-8'
+        ;
+    }
+    .portfolio-item-4{
+        min-height: 50rem;
+    }
+    .portfolio-item-6{
+        min-height: 25rem;
+    }
+
+    .team-items{
+        padding-left: var(--pad-left);
+    }
+    .latest-post{
+        padding-right: var(--pad-right);
+    }
+    .contact-content{
+        padding-right: var(--pad-right);
+        padding-left: var(--pad-left);
+    }
 }
 
 .nav-active{
