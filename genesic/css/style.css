@@ -12,6 +12,8 @@
      --light-color:#efefef;
      --dark-color:#3c3c3c;
      --general-transition: all .4s ease;
+     --pad-right:4rem;
+     --pad-left:4rem;
  }
 
  html{
@@ -19,6 +21,7 @@
     color:var(--dark-color);
     font-family: var(--primary-font);
     scroll-behavior: smooth;
+    overflow-x: hidden;
  }
 
  section{
@@ -740,6 +743,7 @@ ul.social-list li:nth-child(4) a:hover{
 @media only screen and (max-width:992px){
     .navbar-toggler{
         display: block;
+        cursor: pointer;
     }
     .nav-list{
         display: block;
@@ -753,17 +757,70 @@ ul.social-list li:nth-child(4) a:hover{
         transition: var(--general-transition);
         transform: translateX(-100%);
     }
+
+    li.nav-item{
+        padding-top:2rem;
+    }
+    .navbar{
+        justify-content:space-around;
+    }
+    a.nav-link:hover::after{
+        width: 50%;
+    }
+
+    .main-title{
+        font-size: 7rem;
+
+    }
+    .main-slogan{
+        font-size: 1.4rem;
+        letter-spacing: 1.4rem;
+    }
+
+    .vertical-title{
+        display: none;
+    }
+    .horizontal-title{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+    .about-content{
+        padding-right: var(--pad-right);
+    }
+    .services-content{
+        padding-left: var(--pad-left);
+    }
+    .team-content{
+        padding-right: var(--pad-right);
+    }
+    .blog-content{
+        padding-left:var(--pad-left);
+    }
+    .copy-right{
+        padding-left:var(--pad-left);
+    }
+    .back-top{
+        padding-right: var(--pad-right);
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    
 }
 
 .nav-active{
     transform: translateX(0 );
 }
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 8px);
+    transform: rotate(-45deg) translate(-10px, 10px);
 }
 .toggle .line2{
     opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-10px, -10px);
 }
