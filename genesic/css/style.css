@@ -298,6 +298,11 @@ opacity: 0;
      background-color: var(--dark-color);
      color: var(--light-color);
  }
+
+
+
+
+
 .navbar-toggler{
     font-size: 2.2rem;
     position: absolute;
@@ -727,4 +732,38 @@ ul.social-list li:nth-child(4) a:hover{
     border-color: transparent;
     background-color: var(--light-color);
     color: var(--primary-color);
+}
+
+
+/** Media Quertes**/
+
+@media only screen and (max-width:992px){
+    .navbar-toggler{
+        display: block;
+    }
+    .nav-list{
+        display: block;
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 50%;
+        height: 100vh;
+        opacity: .9;
+        transition: var(--general-transition);
+        transform: translateX(-100%);
+    }
+}
+
+.nav-active{
+    transform: translateX(0 );
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 8px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -8px);
 }
