@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesic Web Project</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
     <script src="https://kit.fontawesome.com/41739a5ad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
@@ -15,10 +17,10 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="main-title">GENESIS</h1>
-                <p class="main-slogan">A Little Spave to be creative</p>
-                <div class="arrows">
-                    <a href="#">
+                <h1 class="main-title ani-fade-up">GENESIS</h1>
+                <p class="main-slogan ani-delay ani-fade-up">A Little Spave to be creative</p>
+                <div class="arrows ani-delay-2 ani-fade-up">
+                    <a href="about">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -33,28 +35,28 @@
 
         <nav class="nav">
             <div class="container navbar">
-                <a href="#" class="logo">GN</a>
+                <a href="#hero" class="logo">GN</a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">HOME</a>
+                        <a href="#hero" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">ABOUT</a>
+                        <a href="#about" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">SERVİCE</a>
+                        <a href="#services" class="nav-link">SERVİCE</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">PORTFOLIO</a>
+                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">TEAM</a>
+                        <a href="#team" class="nav-link">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">BLOG</a>
+                        <a href="#blog" class="nav-link">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACT</a>
+                        <a href="#contact" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
 
@@ -74,14 +76,14 @@
         <div class="container">
             <div class="about-content sec-grid">
                 <div class="about-info">
-                    <h2 class="vertical-title">The Story</h2>
-                    <div class="about-detail">
+                    <h2 class="vertical-title ani-delay-2 ani-right">The Story</h2>
+                    <div class="about-detail ani-delay ani-left">
                         <h2 class="horizontal-title">Our Mission</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consectetur soluta vero rerum hic magni fugit. Aperiam vel quod obcaecati, nemo officia illum tempore perspiciatis voluptates quos consequuntur, odio ipsum!</p>
                         <button class="btn-general btn-light">Detail</button>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="about-image ani-fade-up">
                     <img src="./img/company.jpg">
                 </div>
             </div>
@@ -92,12 +94,12 @@
     <section id="services" class="pri-backgraund">
         <div class="container">
             <div class="services-content sec-grid">
-                <div class="services-image">
+                <div class="services-image ani-fade-up">
                     <img src="./img/services.jpg">
                 </div>
                 <div class="services-info">
-                    <h2 class="vertical-title vertical-title-right">The Skills</h2>
-                    <div class="services-detail">
+                    <h2 class="vertical-title vertical-title-right ani-delay-2 ani-left">The Skills</h2>
+                    <div class="services-detail ani-delay ani-right">
                     <div id="services-slider">
                         <div class="service-slide service-slide-1">
                             <h2 class="horizontal-title light-color">Our Service 1</h2>
@@ -121,14 +123,14 @@
 
     <section id="portfolio">
         <div class="portfolio-items">
-            <a href="./img/portfolio-item-1.jpg" class="portfolio-item portfolio-item-1"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-2.jpg" class="portfolio-item portfolio-item-2"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-3.jpg" class="portfolio-item portfolio-item-3"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-4.jpg" class="portfolio-item portfolio-item-4"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-5.jpg" class="portfolio-item portfolio-item-5"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-6.jpg" class="portfolio-item portfolio-item-6"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-7.jpg" class="portfolio-item portfolio-item-7"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item-8.jpg" class="portfolio-item portfolio-item-8"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-1.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-1 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-2.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-2 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-3.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-3 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-4.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-4 ani-fade-up ani-delay"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-5.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-5 ani-fade-up ani-delay"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-6.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-6 ani-fade-up ani-delay-2"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-7.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-7 ani-fade-up ani-delay-2"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item-8.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-8 ani-fade-up ani-delay-2"><span>&#9741;</span></a>
         </div>
     </section>
 
@@ -227,9 +229,9 @@
 
     <section id="contact">
         <div class="container">
-            <div class="contact-content">
+            <div class="contact-content ani-bottom">
                 <h2>Get In Touch With Us</h2>
-                <form>
+                <form class="">
                     <input class="name" type="text" placeholder="Your name">
                     <input class="email" type="email" placeholder="Your email">
                     <textarea class="message" placeholder="Your message"></textarea>
@@ -261,6 +263,21 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script src="./js/script.js"></script>
+
+
+
 
 </body>
 
