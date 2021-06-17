@@ -333,6 +333,17 @@ opacity: 0;
     flex-direction:column;
     align-items: flex-end;
 }
+#services-slider{
+    display: flex;
+    overflow:hidden;
+}
+.service-slide{
+    min-width:100%;
+}
+
+
+
+
 .btn-arrows{
     display: flex;
     padding-top: 2rem;
