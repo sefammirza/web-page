@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+
+}
+header{
+    width:100%;
+    position: fixed;
+    padding: 10px 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background:rgba(255, 255, 255, 0.9)
+}
+header .logo a{
+    font-size: 60px;
+    text-decoration: none;
+    color:black;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-right: 2rem;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+header .shop a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+.back{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/2.jpg) rgba(0, 0, 0, 0.8);
+    background-size: cover;
+}
+.back .content{
+    max-width: 900px;
+    text-align: center;
+}
+.back .content h1{
+    font-size: 50px;
+    color: #EEF4F4;
+
+}
+.back .content h2{
+    font-size: 20px;
+    color: #EEF4F4;
+    margin-top: 20px;
+}
+.back .content button{
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.collection{
+    padding: 100px;
+    background-color: thistle;
+}
+.collection .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.collection .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.collection .content .box{
+    width: 340px;
+    height: 300px;
+    margin-top: 20px;
+    border: 15px solid #fff;
+    box-shadow:0 5px 35px rgb(0 0 0 / 8%);
+    background:url(/img/1.jpg);
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+.collection .content .box .title{
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 25%;
+}
+.collection .content .box .title h2{
+color: cornsilk;
+}
+.collection .content .box .title p{
+    color: cornsilk;
+}
+
+.collection .content .box .title small{
+    color: white;
+
+}
