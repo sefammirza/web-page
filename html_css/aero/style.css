@@ -27,6 +27,11 @@ header .logo a{
     text-decoration: none;
     color:black;
 }
+header .logo a span{
+    color:#E51259;
+    font-weight: bold;
+    font-size: 70px;
+}
 header ul{
     display: flex;
 }
@@ -39,36 +44,65 @@ header ul li a{
     font-size: 1rem;
     color: black;
 }
+header ul li a:hover{
+    color:#E51259;
+    transition: 0.5s;
+}
+header ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E51259;
+    display: block;
+    margin: auto;
+    transition: 0.4s;}
+header:hover li a:hover::after{
+        width: 100%; 
+    }
 header .shop a{
     margin-left: 20px;
     font-size: 20px;
     color: black;
 }
+header .shop a:hover{
+    color: #E51259;
+    transition: 0.5s;
+}
 .back{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(img/2.jpg) rgba(0, 0, 0, 0.8);
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: url(img/3.jpg) rgba(0, 0, 0, 0.8);
     background-size: cover;
 }
-.back .content{
+.back .rg{
+    width: 100%;
+    /* position: relative; */
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+.back .rg .content{
     max-width: 900px;
     text-align: center;
 }
-.back .content h1{
+.back .rg .content h1{
     font-size: 50px;
     color: #EEF4F4;
 
 }
-.back .content h2{
+.back .rg .content h2{
     font-size: 20px;
     color: #EEF4F4;
     margin-top: 20px;
 }
-.back .content button{
+.back .rg .content button{
     padding: 10px 30px;
     margin-top: 30px;
 }
@@ -104,6 +138,11 @@ header .shop a{
     position: relative;
     margin-right: 10px;
 }
+.collection .content .box .bg .title{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
 .collection .content .box .title{
     position: absolute;
     display: inline-block;
@@ -120,4 +159,62 @@ color: cornsilk;
 .collection .content .box .title small{
     color: white;
 
+}
+footer{
+    background: url(img/4.jpg);
+    background-size: cover;
+}
+.content-about{
+    padding: 100px;
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+
+}
+.content-about .bg-rg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    width: 100%;
+}
+
+.content-about .bg-rg .box{
+    padding: 30px;
+}
+.content-about .bg-rg .box:first-child{
+    padding-left: 0;
+}
+.content-about .bg-rg .box1 li i{
+    margin-right: 10px;
+
+}
+
+.content-about .bg-rg .box h1{
+font-size: 20px;
+margin-bottom: 20px;
+color:#E51259;
+}
+.content-about .bg-rg .box p{
+    font-size: 15px;
+    color:white;
+}
+.content-about .bg-rg .box li{
+    list-style: none;
+    margin-top: 10px;
+   
+  
+}
+.content-about .bg-rg .box li a{
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+}
+.content-about .bg-rg .box li a:hover{
+    color: #E51259;
+    transition: 0.5s;
+}
+.content-about .bg-rg .box h2{
+    font-size: 20px;
+    color:#E51259;
 }
