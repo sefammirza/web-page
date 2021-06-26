@@ -183,8 +183,18 @@ margin-bottom: 15px;
 .about .container .info2 img{
     width: 450px;
     margin-right: 35px;
-    border: 5px solid #abd6ea;
+    border: 14px solid #efeeee;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.02);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+.about .container .info2 img:hover{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+    cursor: pointer;
+}
+
 
 .about .container .info2 .abt-us h1{
     font-size: 25px;
@@ -217,7 +227,7 @@ margin-bottom: 15px;
     text-align: center;
 }
 .reference .container .title h1{
-   
+   color: #5e9cb9;
 }
 
 .reference .container .info1{
@@ -238,17 +248,80 @@ margin-bottom: 15px;
 .reference .container .info1 .box .info img{
     width: 120px;
     height: 120px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.reference .container .info1 .box .info img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.04);
+    cursor: pointer;
 }
 .reference .container .info1 .box h2{
     font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 1.17em;
 }
 .reference .container .info1 .box p{
     font-weight: 400;
-    font-size: 14p;
+    font-size: 1rem;
     margin-right: 20px;
 }
 
+.reference .container .title2{
+    text-align: center;
+    margin: 40px 0;
+}
 
+
+
+
+
+.reference .container .title2 h1{
+ color: #3f7f9d;   
+}
+
+.reference .container .info2{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.reference .container .info2 .box{
+
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.reference .container .info2 .box img{
+    width: 180px;
+    height: 180px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.reference .container .info2 .box img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.04);
+    cursor: pointer;
+}
+
+.reference .container .info2 .box h2{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.reference .container .info2 .box h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+
+}
 
 
 
@@ -303,7 +376,7 @@ margin-bottom: 15px;
     .about .container .info2 img{
         width: 325px;
         margin-right: 25px;
-        border: 5px solid #abd6ea;
+        border: 5px solid #efeeee;
     }
     .about .container .info2 .abt-us h1{
         font-size: 20px;
@@ -317,10 +390,23 @@ margin-bottom: 15px;
   
 
 
+
+    .reference .container {
+        padding: 50px 100px;
+}
+
     .reference .container .info1 {
         display: flex;
         flex-direction: column;
     }
+
+
+    .reference .container .info2 .box img{
+        width: 150px;
+        height: 150px;
+    }
+
+    
 
     
 }
@@ -360,8 +446,7 @@ margin-bottom: 15px;
     }
     .about .container .info2 img{
         width: 325px;
-       
-        border: 5px solid #abd6ea;
+        border: 5px solid #efeeee;
     }
     
     .about .container .info2 .abt-us h1{
