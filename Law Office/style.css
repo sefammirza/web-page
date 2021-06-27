@@ -19,11 +19,26 @@ header .container ul{
 header .container ul li{
     list-style: none;
     margin-left: 20px;
+    
 }
 header .container ul li a{
     text-decoration: none;
-    color: #333;
+    color: rgb(2, 1, 1);
 }
+header .container ul li a:hover{
+    color:#E16260;
+    transition: 0.5s;
+}
+header .container ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E16260;
+    display: block;
+    transition: 0.5s;}
+header:hover li a:hover::after{
+        width: 100%; 
+    }
 header .container .nav .nav-tog{
     font-size: 50px;
     position: absolute;
@@ -227,7 +242,8 @@ margin-bottom: 15px;
     text-align: center;
 }
 .reference .container .title h1{
-   color: #5e9cb9;
+   color: #201E1F;
+   font-weight: 500;
 }
 
 .reference .container .info1{
@@ -279,7 +295,8 @@ margin-bottom: 15px;
 
 
 .reference .container .title2 h1{
- color: #3f7f9d;   
+ color: #201E1F;   
+ font-weight: 500;
 }
 
 .reference .container .info2{
@@ -327,12 +344,139 @@ margin-bottom: 15px;
 
 
 
+.advantage .container{
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #666666;
+}
+.advantage .container .title{
+    text-align: center;
+}
+.advantage .container .title h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.advantage .container  .menu{
+    margin: auto;
+}
+.advantage .container  .menu button{
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #BBBBBB;
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 15px 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+.advantage .container  .menu .active{
+    background-color: #666666;
+    color: #fff;
+}
+
+
+
+.advantage .container .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.advantage .container .info h2{
+    color: #fff;
+}
+.advantage .container .info .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.advantage .container .info .main p{
+    color: #fff;
+}
+.advantage .container .info .main img{
+    width: 500px;
+    height: 260px;
+    margin-left: 20px;
+}
 
 
 
 
 
 
+.footer .container{
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #201E1F;
+}
+
+.footer .container .content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer .container .content .box{
+    margin-right:15px;
+    padding: 10px;
+}
+.footer .container .content .box:last-child{
+    margin-right: 0;
+}
+
+.footer .container .content .box h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #999;
+}
+.footer .container .content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #999;
+}
+.footer .container .content .box h2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+}
+.footer .container .content .box span{
+    font-size: 15px;
+    font-weight:bold;
+    color: #fff;
+
+}
+.footer .container .content .box li{
+    list-style: none;
+}
+.footer .container .content .box li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #999;
+    list-style: none;
+}
+.footer .container .content .box li a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+.footer .container .copy{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer .container .copy p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+}
+.footer .container .copy p a{
+    font-size: 15px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration: none;
+}
 
 @media only screen and (max-width:1295px){
     
@@ -406,7 +550,32 @@ margin-bottom: 15px;
         height: 150px;
     }
 
-    
+
+    .advantage .container{
+        padding: 50px 100px;
+    }
+
+    .advantage .container .info .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .advantage .container .info .main img{
+        margin: 15px auto;
+    }
+    .advantage .container .menu button {
+        padding: 6px 13px;
+        border: none;
+        cursor: pointer;
+        background-color: #BBBBBB;
+        color: #fff;
+        font-size: 15px;
+        margin: 5px 5px 5px 0;}
+
+        .footer .container{
+            padding: 50px 100px;
+        }
+      
 
     
 }
@@ -459,5 +628,11 @@ margin-bottom: 15px;
         font-weight: 400;
         margin-top: 10px;
     }
+    .footer .container .content .box {
+        padding: 0;
+    }
 
+    .footer .container{
+        padding: 50px 50px;
+    }
 }
