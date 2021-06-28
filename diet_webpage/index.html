@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyetisyen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <div class="container">
+        <ul>
+            <li><a href=""><img src="./img/face.png" alt=""></a></li>
+            <li><a href=""><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="./img/whatsapp.png" alt=""></a></li>
+            <li><a href="">+90 222 888 777</a></li>
+        </ul>
+    </div>
+    </header>
+    <header class="bottom">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Ana Sayfa</a></li>
+                    <li><a href="">Hakkımda</a></li>
+                    <li><a href="">Diyetler</a></li>
+                    <li><a href="">Tarifler</a></li>
+                    <li><a href="">Yorumlar</a></li>
+                    <li><a href="">Sorular</a></li>
+                    <li><a href="">Galeri</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+
+
+    <section class="banner">
+        <div class="container">
+            <div class="slider">
+                <div class="img-slider">
+                    <div class="slide active"><img src="./img/banner1.jpg" alt=""></div>
+                    <div class="slide"><img src="./img/banner2.jpg" alt=""></div>
+                    <div class="slide"><img src="./img/banner3.jpg" alt=""></div>
+                </div>
+                <div class="next">»</div>
+                <div class="prev">«</div>
+                
+            </div>
+            </div>
+    </section>
+
+    <script>
+var slides=document.querySelector('.img-slider').children;
+ var nextSlide=document.querySelector(".next");
+var prevSlide=document.querySelector(".prev");
+var totalSlides=slides.length;
+var index=0;
+
+nextSlide.onclick=function () {
+     next("next");
+}
+prevSlide.onclick=function () {
+     next("prev");
+}
+
+function next(direction){
+
+   if(direction=="next"){
+      index++;
+       if(index==totalSlides){
+        index=0;
+       }
+   } 
+   else{
+           if(index==0){
+            index=totalSlides-1;
+           }
+           else{
+            index--;
+           }
+    }
+
+  for(i=0;i<slides.length;i++){
+          slides[i].classList.remove("active");
+  }
+  slides[index].classList.add("active");     
+
+}
+    </script>
+</body>
+</html>

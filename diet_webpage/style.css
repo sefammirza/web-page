@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top .container{
+ display: flex;   
+ padding: 10px  200px 0;
+ flex-direction: row-reverse;
+ text-align: center;
+}
+.top .container ul{
+    display: flex;
+}
+.top .container ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+.top .container ul li a{
+    text-decoration: none;
+}
+.bottom .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 200px;
+}
+.bottom .container .nav ul{
+    display: flex;
+}
+.bottom .container .nav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+.bottom .container .nav ul li a{
+    text-decoration: none;
+    
+}
+
+
+
+
+.banner .container{
+    width: 100%;
+}
+.banner .container .slider{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.banner .container .slider .img-slider{
+
+}
+
+.banner .container .slider .img-slider .slide{
+    display: none;
+    position: relative;
+}
+.banner .container .slider .img-slider img{
+    max-width: 100%;
+    display: block;
+}
+.banner .container .slider .img-slider .active{
+    display: block;
+}
+.banner .container .slider  .next{
+    position: absolute;
+    color: rgb(205, 35, 52);
+    font-size: 70px;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    right: 20px;
+}
+
+.banner .container .slider  .prev{
+    position: absolute;
+    color: rgb(205, 35, 52);
+    font-size: 70px;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    left: 20px;
+}
