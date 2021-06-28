@@ -42,7 +42,20 @@
     
 }
 
-
+.bottom .container  .nav-tog {
+    font-size: 50px;
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    z-index: 100;
+    display: none;
+}
+.bottom .container  .nav-tog .line {
+    width: 40px;
+    height: 5px;
+    background-color:rgb(205, 35, 52);
+    margin: 8px;
+}
 
 
 .banner .container{
@@ -144,6 +157,7 @@
 .content-health .container{
     display: flex;
     flex-direction: column;
+    padding: 0 200px;
 }
 .content-health .container .main{
     width: 100%;
@@ -160,6 +174,7 @@
     top: -150px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .content-health .container .main .main-box .box{
     text-align: center;
@@ -200,7 +215,116 @@ text-align: center;
 .content-health .container .main2{
     margin-top: 175px;
     text-align: center;
+    padding: 0 200px;
 }
+.content-health .container .main2 h1{
+    font-weight: 500;
+    font-size: 25px;
+
+}
+.content-health .container .main2 p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.content-health .container .who{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+}
+
+.content-health .container .who .box1{
+    position: relative;
+}
+
+.content-health .container .who .box h1{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.content-health .container .who .box p{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.content-health .container .who .box button{
+    padding: 10px 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #387A00;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.content-health .container .who .box1  .imgg{
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.content-health .container .who .box1  .imgg img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-health .container .who .box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.questions .container{
+    padding: 100px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F0F0F2;
+}
+
+.questions .container .box1 img{
+width: 650px;
+height: 480px;
+}
+
+
+.questions .container .box h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.questions .container .box ul{
+    margin-top: 30px;
+}
+.questions .container .box ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.questions .container .box ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+}
+.questions .container .box ul li a:hover{
+    text-decoration: underline;
+}
+.questions .container .box button{
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    background-color: #387A00;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -229,6 +353,24 @@ text-align: center;
     .top .container {
         padding: 7px 85px 0;
     }
+
+    .bottom .container  .nav-tog {
+        display: block;
+        cursor: pointer;
+    }
+    .bottom .container  .nav {
+        display: none;
+    }
+
+    .bottom .container .nav-tog .line {
+        width: 30px;
+        height: 4px;
+        margin: 5px;
+    }
+    .bottom .container .nav-tog {
+        top: 55px;
+    }
+
     .banner .container .slider .img-slider .slide .info {
         top: 12%;
         right: 60px;
@@ -247,8 +389,12 @@ text-align: center;
     .banner .container .slider .next {
         font-size: 50px;
     }
+    .banner .container .slider .prev {
+        font-size: 50px;
+    }
     .content-health .container .main2 {
-        margin-top: 150px;
+        margin-top: 130px;
+        padding: 0 100px;
     }
     .content-health .container .main .main-box {
         display: flex;
@@ -275,5 +421,249 @@ text-align: center;
         .content-health .container .main .main-box .box button {
             padding: 5px 15px;
         }
-    
+        .content-health .container{
+            padding: 0 100px;
+        }
+
+        .content-health .container .who .box1 .imgg {
+            display: none;
+        }
+        .questions .container .box1 img {
+            width: 500px;
+            height: 360px;
+        }
+        .questions .container {
+            padding: 100px 100px;
+        }
+        .questions .container .box ul li a{
+            font-size: 16px;
+        }
 }
+
+
+@media only screen and (max-width:900px){
+    
+    .bottom .container {
+        padding: 0 40px;
+    }
+    .top .container {
+        padding: 7px 40px 0;
+    }
+
+    .bottom .container  .nav-tog {
+        display: block;
+        cursor: pointer;
+    }
+    .bottom .container  .nav {
+        display: none;
+    }
+
+    .bottom .container .nav-tog .line {
+        width: 30px;
+        height: 4px;
+        margin: 5px;
+    }
+    .bottom .container .nav-tog {
+        top: 55px;
+        right: 35px;
+    }
+
+
+    .banner .container .slider .img-slider .slide .info {
+        top: 12%;
+        right: 60px;
+    }
+    .banner .container .slider .img-slider .slide .info h1 {
+        font-size: 12px;
+    }
+    .banner .container .slider .img-slider .slide .info p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .banner .container .slider .img-slider .slide .info button {
+        padding: 4px 9px;
+        margin-top: 15px;
+    }
+    .banner .container .slider .next {
+        font-size: 30px;
+    }
+    .banner .container .slider .prev {
+        font-size: 30px;
+    }
+    .content-health .container .main2 {
+        margin-top: 310px;
+        padding: 0 75px;
+    }
+    .content-health .container .main2 h1{
+        font-weight: 500;
+        font-size: 20px;
+    
+    }
+    .content-health .container .main2 p{
+        font-size: 13px;
+    }
+    .content-health .container .main .main-box {
+        display: grid;
+        /* flex-direction: column; */
+        flex-wrap: ;
+        grid-template-columns: 1fr 1fr;
+        /* justify-content: space-between; */
+        top: -100px;
+    }
+        .content-health .container .main .main-box .box {
+            padding: 15px 8px;
+            min-width: 175px;
+        }
+        .content-health .container .main .main-box .box img {
+            width: 60px;
+            height: 60px;
+        }
+        .content-health .container .main .main-box .box h1 {
+            font-size: 15px;
+        }
+        .content-health .container .main .main-box .box p {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+        .content-health .container .main .main-box .box button {
+            padding: 3px 12px;
+        }
+    
+.bottom .container .logo img{
+    width: 150px;
+    height: 67px;
+}
+
+.content-health .container{
+    padding: 0 50px;
+}
+.content-health .container .who .box h1{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.content-health .container .who .box p{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.content-health .container .who .box button{
+    padding: 6px 10px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.questions .container .box h1 {
+    font-size: 15px;
+}
+
+.questions .container .box1 img {
+    width: 400px;
+    height: 280px;
+}
+.questions .container {
+    padding: 50px 25px;
+}
+.questions .container .box ul li a{
+    font-size: 14px;
+}
+.questions .container .box ul {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:650px){
+
+    .content-health .container .main .main-box {
+        top: -43px;
+    }
+    .content-health .container .main2 {
+        margin-top: 366px;
+    }
+    .content-health .container{
+        padding: 0 0;
+    }
+    .content-health .container .who {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 50px;
+        padding: 30px 70px;
+    }
+    .questions .container .box{
+        text-align: center;
+    }
+    .questions .container .box2 {
+        text-align: center;
+        /* margin-top: 10px; */
+        text-align: left;
+        padding: 0 80px;
+    }
+    .questions .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media only screen and (max-width:490px){
+
+    .content-health .container .main .main-box {
+        top: -43px;
+        display: flex;
+        flex-direction: column;
+        top: -28px;
+    }
+
+.content-health .container .main2 {
+    margin-top: 769px;
+}
+.banner .container .slider .img-slider .slide .info {
+    top: 6%;
+    right: 29px;
+}
+.banner .container .slider .img-slider .slide .info button {
+    padding: 2px 6px;
+    margin-top: 7px;
+    font-size: 11px;
+}
+.banner .container .slider .img-slider .slide .info p {
+    font-size: 10px;
+    margin-top: 4px;
+}
+.content-health .container{
+    padding: 0 0;
+}
+.questions .container .box h1 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0;
+}
+.questions .container .box2{
+    text-align: left;
+    padding: 0 38px;
+}
+.questions .container .box1 img {
+    width: 350px;
+    height: 250px;
+}
+.questions .container .box ul li a {
+    font-size: 12px;
+}
+.questions .container .box ul li {
+    margin-top: 3px;
+}
+.questions .container .box button {
+    padding: 6px 10px;
+
+}
+}
+
+
