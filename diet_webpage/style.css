@@ -377,6 +377,37 @@ margin-top: 15px;
 }
 
 
+.us .container{
+    padding:450px 200px 100px;
+}
+.us .container .info{
+text-align: center;
+max-width: 600px;
+margin: auto;
+}
+
+
+.us .container .info h1{
+    font-weight: 500px;
+    font-size: 20px;
+}
+.us .container .info h2{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 12px 0;
+}
+.us .container .info button{
+    padding: 10px 20px;
+    font-weight:400 ;
+    background-color: #387A00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
 
 
 
@@ -549,6 +580,9 @@ margin-top: 15px;
             cursor: pointer;
         }
 
+        .us .container{
+            padding:350px 200px 100px;
+        }
 
 
 
@@ -718,9 +752,29 @@ margin-top: 15px;
     }
 
 
+    .us .container{
+        padding:275px 100px 100px;
+    }
 
-
-
+    .us .container .info h1{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .us .container .info h2{
+        font-weight: 400;
+        font-size: 13px;
+        margin: 9px 0;
+    }
+    .us .container .info button{
+        padding: 8px 17px;
+        font-weight:400 ;
+        background-color: #387A00;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
 
 
 
@@ -764,6 +818,25 @@ margin-top: 15px;
         display: flex;
         flex-direction: column;
     }
+
+    .us .container{
+        padding:300px 100px 100px;
+    }
+
+    .us .container .info h1{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .us .container .info h2{
+        font-weight: 400;
+        font-size: 13px;
+        margin: 9px 0;
+    }
+    .us .container .info button{
+        padding: 8px 17px;
+        margin-top: 6px;
+    }
+    
 
 }
 
@@ -851,7 +924,29 @@ margin-top: 15px;
     }
 
 
+    .us .container{
+        padding:925px 100px 100px;
+    }
 
+    .us .container .info h1{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .us .container .info h2{
+        font-weight: 400;
+        font-size: 13px;
+        margin: 9px 0;
+    }
+    .us .container .info button{
+        padding: 8px 17px;
+        font-weight:400 ;
+        background-color: #387A00;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
 
 
 
