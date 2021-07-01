@@ -322,6 +322,60 @@ height: 480px;
 
 
 
+.blog .container{
+    padding: 120px 200px;
+    background: url(./img/11.jpg) center/cover;
+    width: 100%;
+}
+.blog .container .blog2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.blog .container .blog2 .info{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 100px;
+}
+
+.blog .container .blog2 .info .box{
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #F0F0F2;
+    background-color: #fff;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.blog .container .blog2 .info .box:last-child{
+    margin-right: 0;
+}
+
+.blog .container .blog2 .info .box img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blog .container .blog2 h1{
+    margin-bottom: 100px;
+    color: #fff;
+}
+.blog .container .blog2 .info .box p{
+font-weight: 400;
+font-size: 15px;
+margin-top: 15px;
+}
+
+.blog .container .blog2 .info .box button{
+    padding: 10px 20px;
+    color: #387A00;
+    border: 1px solid #387A00;
+    background-color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
 
 
 
@@ -438,6 +492,74 @@ height: 480px;
         .questions .container .box ul li a{
             font-size: 16px;
         }
+
+
+
+
+
+        .blog .container{
+            padding: 75px 100px;
+        }
+        .blog .container .blog2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+        
+        .blog .container .blog2 .info{
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            top: 100px;
+        }
+        
+        .blog .container .blog2 .info .box{
+            padding: 10px 20px;
+            text-align: left;
+            border: 1px solid #F0F0F2;
+            background-color: #fff;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .blog .container .blog2 .info .box:last-child{
+            margin-right: 0;
+        }
+        
+        .blog .container .blog2 .info .box img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .blog .container .blog2 h1{
+            margin-bottom: 100px;
+            color: #fff;
+        }
+        .blog .container .blog2 .info .box p{
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 15px;
+        }
+        
+        .blog .container .blog2 .info .box button{
+            padding: 10px 20px;
+            color: #387A00;
+            border: 1px solid #387A00;
+            background-color: #fff;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -576,6 +698,39 @@ height: 480px;
 
 
 
+
+
+.blog .container{
+    padding: 45px 50px;
+}
+.blog .container .blog2 .info {
+    top: 80px;
+}
+.blog .container .blog2 .info .box {
+    padding: 10px 10px;}
+    .blog .container .blog2 .info .box p {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    .blog .container .blog2 .info .box button {
+        padding: 6px 8px;
+        margin-top: 9px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media only screen and (max-width:650px){
@@ -651,8 +806,8 @@ height: 480px;
     padding: 0 38px;
 }
 .questions .container .box1 img {
-    width: 350px;
-    height: 250px;
+    width: 230px;
+    height:180px;
 }
 .questions .container .box ul li a {
     font-size: 12px;
@@ -664,6 +819,44 @@ height: 480px;
     padding: 6px 10px;
 
 }
+
+
+
+
+.blog .container .blog2 .info {
+    display: flex;
+    position: absolute;
+    /* justify-content: space-between; */
+    flex-direction: column;}
+
+    .blog .container {
+        padding: 45px 75px;
+    }
+    .blog .container .blog2 .info .box {
+        padding: 10px 16px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .blog .container .blog2 .info .box:last-child {
+        padding: 10px 16px;
+        margin-bottom: 0;
+    }
+    .blog .container .blog2 .info .box p {
+        font-size: 12px;
+    }
+    .blog .container .blog2 .info .box button {
+        padding: 4px 4px;
+        margin-top: 9px;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
 }
 
 
