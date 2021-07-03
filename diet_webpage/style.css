@@ -23,6 +23,7 @@
 }
 .top .container ul li a{
     text-decoration: none;
+    color: black;
 }
 .bottom .container{
     display: flex;
@@ -36,10 +37,16 @@
 .bottom .container .nav ul li{
     list-style: none;
     margin-left: 15px;
+   
 }
 .bottom .container .nav ul li a{
     text-decoration: none;
+    color: black;
     
+}
+.bottom .container .nav ul li a:hover{
+ color: rgb(205, 35, 52);  
+ transition: 0.5s; 
 }
 
 .bottom .container  .nav-tog {
@@ -348,6 +355,12 @@ height: 480px;
     background-color: #fff;
     margin-right: 15px;
     border-radius: 5px;
+
+}
+.blog .container .blog2 .info .box:hover{
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    transition: 0.5s;
+
 }
 .blog .container .blog2 .info .box:last-child{
     margin-right: 0;
@@ -808,7 +821,9 @@ color: #fff;
 
 
 
-
+.footers .container {
+    padding: 50px;
+}
 
 .blog .container{
     padding: 45px 50px;
@@ -931,7 +946,7 @@ color: #fff;
         margin-bottom: 10px;
     }
     .footer-bottom .container{
-        padding: 50px 100px;
+        padding:0 50px 50px;
     }
     .footer-bottom .container p {
         font-size: 13px;}
@@ -1070,3 +1085,77 @@ color: #fff;
 }
 
 
+@media only screen and (max-width:350px){
+    .top .container {
+        padding: 7px 20px 0;
+    }
+    .bottom .container {
+        padding: 0 20px;
+    }
+    .banner .container .slider .img-slider .slide .info {
+        top: 4%;
+        right: 2px;
+    }
+    .banner .container .slider .img-slider .slide .info {
+        width: 50%;
+    }
+    .banner .container .slider .img-slider .slide .info h1 {
+        font-size: 10px;
+    }
+    .banner .container .slider .img-slider .slide .info p {
+        font-size: 9px;
+        margin-top: 1px;
+    }
+    .banner .container .slider .img-slider .slide .info button {
+        padding: 2px 5px;
+        margin-top: 0px;
+        font-size: 9px;
+    }
+    .top .container ul li a {
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .content-health .container .main2 {
+        padding: 0 20px;
+    }
+    .content-health .container .who {
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: center; */
+        /* padding-top: 50px; */
+        padding: 30px 20px;}
+        .questions .container {
+            padding: 25px 20px;
+        }
+        .questions .container .box2 {
+            text-align: left;
+            padding: 0 20px;
+        }
+.blog .container {
+    padding: 25px 25px;
+}
+.us .container {
+    padding: 920px 20px 25px;
+}
+.us .container .info button {
+    padding: 6px 12px;}
+    .footers .container {
+        padding: 25px 20px;
+    }
+    .footer-bottom .container {
+        padding: 0 20px 25px;
+    }
+    .footer-bottom .container img {
+        margin-bottom: 25px;
+    }
+    .bottom .container .nav-tog .line {
+        width: 23px;
+        height: 3px;
+        margin: 3px;
+    }
+    .bottom .container .nav-tog {
+        top: 60px;
+        right: 20px;
+    }
+
+}
