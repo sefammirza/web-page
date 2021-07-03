@@ -445,7 +445,11 @@ margin: auto;
     font-size: 13px;
     font-weight: 400;
     color: #fff;
-    
+    transition: 0.5s;
+}
+.footers .container .contact .box li a:hover{
+    text-decoration: underline;
+  
 }
 .footers .container .contact .box span{
     color: #d8ff84;
@@ -478,6 +482,7 @@ color: #fff;
 .footers .container .contact .box3 ul li a{
     font-size: 20px;
 }
+
 .footers .container .contact .box img{
     margin-bottom: 15px;
 }
@@ -550,7 +555,7 @@ color: #fff;
         font-size: 23px;
     }
     .banner .container .slider .img-slider .slide .info p {
-        font-size: 15px;
+        font-size: 17px;
         margin-top: 13px;
     }
     .banner .container .slider .img-slider .slide .info button {
@@ -1081,6 +1086,9 @@ color: #fff;
         display: flex;
         margin-top: 10px;
         justify-content: center;
+    }
+    .banner .container .slider .img-slider .slide .info {
+        width: 44%;
     }
 }
 
