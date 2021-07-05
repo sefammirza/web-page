@@ -21,11 +21,11 @@
     </div>
     </header>
     <header class="bottom">
-        <div class="container">
+        <div class="container ani-fade-up">
             <div class="logo">
                 <img src="./img/logo.png" alt="">
             </div>
-            <div class="nav">
+            <div class="nav ">
                 <ul>
                     <li><a href="">Ana Sayfa</a></li>
                     <li><a href="">Hakkımda</a></li>
@@ -63,14 +63,14 @@
         <div class="container">
             <div class="slider">
                 <div class="img-slider">
-                    <div class="slide active"><img src="./img/banner1.jpg" alt="">
+                    <div class="slide active ani-fade-up"><img src="./img/banner1.jpg" alt="">
                     <div class="info">
-                        <h1>Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
-                        <button>Şimdi Başla</button>
+                        <h1 class="title-1 ani-fade-up">Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
+                        <p class="p-1 ani-fade-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
+                        <button class="btn-1 ani-fade-up">Şimdi Başla</button>
                     </div>
                     </div>
-                    <div class="slide"><img src="./img/banner2.jpg" alt="">
+                    <div class="slide "><img src="./img/banner2.jpg" alt="">
                         <div class="info">
                             <h1>Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
@@ -95,7 +95,7 @@
     <section class="content-health">
         <div class="container">
             <div class="main">
-            <div class="main-box">
+            <div class="main-box ani-fade-up ">
                 <div class="box">
                     <img src="./img/4.png" alt="">
                     <h1>Diyetler</h1>
@@ -141,7 +141,7 @@
                     <div class="imgg"><img src="./img/6.jpg" alt=""></div>
             </div>
             <div class="box box2">
-                <img src="./img/5.png" alt="">
+                <img class="ani-fade-up" src="./img/5.png" alt="">
             </div>
         </div>
         </div>
@@ -150,7 +150,7 @@
 <section class="questions">
     <div class="container">
         <div class="box box1">
-            <img src="./img/7.png" alt="">
+            <img class="ani-fade-up" src="./img/7.png" alt="">
         </div>
         <div class="box box2">
             <h1>Sizden gelen sorular, en çok
@@ -173,17 +173,17 @@
             <h1>Blog</h1>
             <div class="info">
                 <div class="box">
-                    <img src="./img/8.jpg" alt="">
+                    <img class="ani-fade-up" src="./img/8.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nulla semper, tincidunt sem sed, faucibus felis.</p>
                     <button>Yazının Devamı</button>
                 </div>
                 <div class="box">
-                    <img src="./img/9.jpg" alt="">
+                    <img class="ani-fade-up" src="./img/9.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nulla semper, tincidunt sem sed, faucibus felis.</p>
                     <button>Yazının Devamı</button>
                 </div>
                 <div class="box">
-                    <img src="./img/10.jpg" alt="">
+                    <img class="ani-fade-up" src="./img/10.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nulla semper, tincidunt sem sed, faucibus felis.</p>
                     <button>Yazının Devamı</button>
                 </div>
@@ -199,10 +199,10 @@
 <section class="us">
     <div class="container">
         <div class="info">
-            <h1>BİZİMLE İLETİŞİME GEÇİN</h1>
-            <h2>Sağlık, zindelik, dengeli beslenme
+            <h1 class="title-1">BİZİMLE İLETİŞİME GEÇİN</h1>
+            <h2 class="p-1">Sağlık, zindelik, dengeli beslenme
                 hayatımızı kontrol etmek elimizde!</h2>
-            <button>Şimdi Başla</button>
+            <button class="btn-1">Şimdi Başla</button>
         </div>
     </div>
 </section>
@@ -282,46 +282,21 @@ ANTALYA<br/>
 <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-let slides=document.querySelector('.img-slider').children;
-let nextSlide=document.querySelector(".next");
-let prevSlide=document.querySelector(".prev");
-let totalSlides=slides.length;
-let index=0;
-
-nextSlide.onclick=function () {
-     next("next");
-}
-prevSlide.onclick=function () {
-     next("prev");
-}
-
-function next(direction){
-
-   if(direction=="next"){
-      index++;
-       if(index==totalSlides){
-        index=0;
-       }
-   } 
-   else{
-           if(index==0){
-            index=totalSlides-1;
-           }
-           else{
-            index--;
-           }
-    }
-
-  for(i=0;i<slides.length;i++){
-          slides[i].classList.remove("active");
-  }
-  slides[index].classList.add("active");     
-
-}
-
 /* scroll */
-ScrollReveal().reveal()
+ScrollReveal().reveal('.title-1',{
+    delay:500
+});
+ScrollReveal().reveal('.p-1',{
+    delay:1000
+});
 
+ScrollReveal().reveal('.btn-1',{
+    delay:1500
+});
+ScrollReveal().reveal('.ani-fade-up',{
+    opacity:0,
+    easing:'ease-in'
+});
     </script>
 </body>
 </html>
