@@ -22,7 +22,7 @@
     </header>
     <header class="bottom">
         <div class="container ani-fade-up">
-            <div class="logo">
+            <div class="logo flip">
                 <img src="./img/logo.png" alt="">
             </div>
             <div class="nav ">
@@ -95,7 +95,7 @@
     <section class="content-health">
         <div class="container">
             <div class="main">
-            <div class="main-box ani-fade-up ">
+            <div class="main-box">
                 <div class="box">
                     <img src="./img/4.png" alt="">
                     <h1>Diyetler</h1>
@@ -199,10 +199,10 @@
 <section class="us">
     <div class="container">
         <div class="info">
-            <h1 class="title-1">BİZİMLE İLETİŞİME GEÇİN</h1>
-            <h2 class="p-1">Sağlık, zindelik, dengeli beslenme
+            <h1>BİZİMLE İLETİŞİME GEÇİN</h1>
+            <h2>Sağlık, zindelik, dengeli beslenme
                 hayatımızı kontrol etmek elimizde!</h2>
-            <button class="btn-1">Şimdi Başla</button>
+            <button>Şimdi Başla</button>
         </div>
     </div>
 </section>
@@ -211,7 +211,7 @@
 <footer class="footers">
     <div class="container">
         <div class="contact">
-            <div class="box box1">
+            <div class="box box1 smooth">
                 <h1>Ana Menü</h1>
                 <ul>
                     <li><a href="#">Anasayfa</a></li>
@@ -223,7 +223,7 @@
                     <li><a href="#">İletişim</a></li>
                 </ul>
             </div>
-            <div class="box box2">
+            <div class="box box2 smooth">
                 <h1>Diyetler</h1>
                 <ul>
                     <li><a href="#">Kadınlar İçin Diyet</a></li>
@@ -233,7 +233,7 @@
                     <li><a href="#">Çocuk Diyeti</a></li>
                 </ul>
             </div>
-            <div class="box box3">
+            <div class="box box3 smooth">
                 <h1>Bize Ulaşın</h1>
                 <p>
                     Yeşilbahçe Mah.<br/>
@@ -250,7 +250,7 @@ ANTALYA<br/>
                     </ul>
                 
             </div>
-            <div class="box box4">
+            <div class="box box4 smooth">
                 <h1>Kurumsal</h1>
                 <img src="./img/12.png" alt="">
                 <p>Bu site bilgilendirme amaçlı hazırlanmıştır. Ziyaretçilerin, doktor kontrolü olmadan, diyet yapmaları, sağlık açısından tehlikeli sonuçlar yaratabilir.</p>
@@ -259,10 +259,10 @@ ANTALYA<br/>
     </div>
 </footer>
 <footer class="footer-bottom">
-    <div class="container">
+    <div class="container ">
         <img src="./img/13.png" alt="">
-        <p>©2021 Diyetisyen Burçin İnce. Her Hakkı Saklıdır.</p>
-        <p><a href="">Kullanım Kuralları</a> - <a href="">Gizlilik Politikası</a></p>
+        <p class="items">©2021 Diyetisyen Burçin İnce. Her Hakkı Saklıdır.</p>
+        <p class="items"><a href="">Kullanım Kuralları</a> - <a href="">Gizlilik Politikası</a></p>
     </div>
 </footer>
 
@@ -297,6 +297,17 @@ ScrollReveal().reveal('.ani-fade-up',{
     opacity:0,
     easing:'ease-in'
 });
+ScrollReveal().reveal('.items', { 
+    distance: '50px' });
+ScrollReveal().reveal('.smooth', { 
+    easing: 'ease-in' });
+    ScrollReveal().reveal('.flip', {
+    rotate: {
+        x: 20,
+        z: 20
+    }
+});
+
     </script>
 </body>
 </html>
