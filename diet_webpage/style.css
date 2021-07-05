@@ -37,17 +37,54 @@
 .bottom .container .nav ul li{
     list-style: none;
     margin-left: 15px;
+    position: relative;
    
 }
 .bottom .container .nav ul li a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
     
 }
 .bottom .container .nav ul li a:hover{
  color: rgb(205, 35, 52);  
  transition: 0.5s; 
 }
+.bottom .container .nav ul li:hover .navbar{
+    visibility: visible;
+    opacity: 1;
+   
+}
+.bottom .container .nav .navbar{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 4;
+    width: 220px;
+    background-color:#fff;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 15px 15px 0;
+    border-radius: 5px;
+    transition: 0.9s;
+    opacity: 0;
+}
+.bottom .container .nav .navbar ul{
+    display: flex;
+    flex-direction: column;
+   
+}
+.bottom .container .nav .navbar ul li{
+    padding-left: 18px;
+    margin-left: 0;
+   
+}
+.bottom .container .nav .navbar ul li:hover{
+    border-left:2px solid rgb(205, 35, 52);
+    transition: 0.2s;
+   
+}
+
 
 .bottom .container  .nav-tog {
     font-size: 50px;
@@ -78,13 +115,15 @@
     
 }
 .banner .container .slider:hover  .next{
-    display: block;
+    visibility: visible;
+    opacity: 1;
     transition: 0.5s;
     right: 20px;
     transition-duration:0.5s;
 }
 .banner .container .slider:hover  .prev{
-    display: block;
+    visibility: visible;
+    opacity: 1;
     left:20px;
 
     
@@ -92,6 +131,7 @@
 .banner .container .slider .img-slider .slide{
     display: none;
     position: relative;
+    
 }
 .banner .container .slider .img-slider .slide .info{
     position: absolute;
@@ -140,7 +180,8 @@
     text-align: center;
     line-height: 40px;
     right: 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     
 
     
@@ -156,7 +197,8 @@
     text-align: center;
     line-height: 40px;
     left: 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     transition-duration:0.5s;
 }
 
@@ -216,7 +258,12 @@ text-align: center;
             color: rgb(255, 255, 255);
             border: 1px solid #fff;
             cursor: pointer;
-
+            }
+            .content-health .container .main .main-box .box button:hover{
+                background-color: rgb(255, 255, 255);
+                color: rgb(205, 35, 52);
+                border:1px solid rgb(205, 35, 52);
+                transition: 0.7s;
             }
     
 .content-health .container .main2{
@@ -263,6 +310,7 @@ text-align: center;
     cursor: pointer;
     margin-top: 30px;
 }
+
 .content-health .container .who .box1  .imgg{
     position: absolute;
     bottom: 65px;
@@ -388,7 +436,11 @@ margin-top: 15px;
     margin-top: 15px;
     cursor: pointer;
 }
-
+.blog .container .blog2 .info .box button:hover{
+color: rgb(255, 255, 255);
+background-color: #387A00;
+transition: 0.8s;
+}
 
 .us .container{
     padding:450px 200px 100px;
@@ -481,6 +533,18 @@ color: #fff;
 }
 .footers .container .contact .box3 ul li a{
     font-size: 20px;
+}
+.footers .container .contact .box3 ul li a:hover .fa-facebook-square{
+    color: #3b5998;
+    transition: 0.5s;
+}
+.footers .container .contact .box3 ul li a:hover .fa-whatsapp{
+    color: #25D366;
+    transition: 0.5s;
+}
+.footers .container .contact .box3 ul li a:hover .fa-twitter{
+    color: #00a0d1;
+    transition: 0.5s;
 }
 
 .footers .container .contact .box img{

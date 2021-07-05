@@ -29,7 +29,17 @@
                 <ul>
                     <li><a href="">Ana Sayfa</a></li>
                     <li><a href="">Hakkımda</a></li>
-                    <li><a href="">Diyetler</a></li>
+                    <li><a href="">Diyetler</a>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="#">Kadınlar için diyet</a></li>
+                            <li><a href="#">Sporcu  diyeti</a></li>
+                            <li><a href="#">Erkekler için diyet</a></li>
+                            <li><a href="#">Çocuk diyeti</a></li>
+                            <li><a href="#">Hamile diyeti</a></li>
+                        </ul>
+                    </div>
+                    </li>
                     <li><a href="">Tarifler</a></li>
                     <li><a href="">Yorumlar</a></li>
                     <li><a href="">Sorular</a></li>
@@ -269,14 +279,14 @@ ANTALYA<br/>
 
 
 
-
+<script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-var slides=document.querySelector('.img-slider').children;
- var nextSlide=document.querySelector(".next");
-var prevSlide=document.querySelector(".prev");
-var totalSlides=slides.length;
-var index=0;
+let slides=document.querySelector('.img-slider').children;
+let nextSlide=document.querySelector(".next");
+let prevSlide=document.querySelector(".prev");
+let totalSlides=slides.length;
+let index=0;
 
 nextSlide.onclick=function () {
      next("next");
@@ -308,6 +318,10 @@ function next(direction){
   slides[index].classList.add("active");     
 
 }
+
+/* scroll */
+ScrollReveal().reveal()
+
     </script>
 </body>
 </html>
