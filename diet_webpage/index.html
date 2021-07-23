@@ -63,21 +63,21 @@
         <div class="container">
             <div class="slider">
                 <div class="img-slider">
-                    <div class="slide active ani-fade-up"><img src="./img/banner1.jpg" alt="">
+                    <div class="slide active ani-fade-up fade"><img src="./img/banner1.jpg" alt="">
                     <div class="info">
                         <h1 class="title-1 ani-fade-up">Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
                         <p class="p-1 ani-fade-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
                         <button class="btn-1 ani-fade-up">Şimdi Başla</button>
                     </div>
                     </div>
-                    <div class="slide "><img src="./img/banner2.jpg" alt="">
+                    <div class="slide fade"><img src="./img/banner2.jpg" alt="">
                         <div class="info">
                             <h1>Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
                             <button>Şimdi Başla</button>
                         </div>
                     </div>
-                    <div class="slide"><img src="./img/banner3.jpg" alt="">
+                    <div class="slide fade"><img src="./img/banner3.jpg" alt="">
                         <div class="info">
                             <h1>Diyetle Olmak Yerine, <br> Bir Yaşam Şekli Belirlemek</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, excepturi! Asperiores nemo magni nostrum deleniti.</p>
@@ -85,8 +85,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="next">»</div>
-                <div class="prev">«</div>
+                <div class="next" id="right">»</div>
+                <div class="prev" id="left">«</div>
             </div>
             </div>
     </section>
@@ -280,32 +280,6 @@ ANTALYA<br/>
 
 
 <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-/* scroll */
-ScrollReveal().reveal('.title-1',{
-    delay:500
-});
-ScrollReveal().reveal('.p-1',{
-    delay:1000
-});
-
-ScrollReveal().reveal('.btn-1',{
-    delay:1500
-});
-ScrollReveal().reveal('.ani-fade-up',{
-    opacity:0,
-    easing:'ease-in'
-});
-ScrollReveal().reveal('.items', { 
-    distance: '50px' });
-ScrollReveal().reveal('.smooth', { 
-    easing: 'ease-in' });
-    ScrollReveal().reveal('.flip', {
-    rotate: {
-        x: 20,
-        z: 20
-    }
-});
-    </script>
+<script src="./app.js"></script>
 </body>
 </html>
