@@ -46,9 +46,22 @@
     font-size: 14px;
     
 }
-.bottom .container .nav ul li a:hover{
- color: rgb(205, 35, 52);  
- transition: 0.5s; 
+.bottom .container .nav ul li  a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(205, 35, 52);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+    
+}
+.bottom .container .nav ul li  a:hover::after{
+    width: 100%; 
+    color: rgb(205, 35, 52);
+}
+.bottom .container .nav .navbar ul li  a:hover::after{
+    width: 0; 
 }
 .bottom .container .nav ul li:hover .navbar{
     visibility: visible;
@@ -88,7 +101,6 @@
 
 .bottom .container  .nav-tog {
     font-size: 50px;
-    position: absolute;
     right: 80px;
     top: 50px;
     z-index: 100;
@@ -589,6 +601,7 @@ color: #fff;
     
     .bottom .container {
         padding: 0 85px;
+        position: relative;
     }
     .top .container {
         padding: 7px 85px 0;
@@ -601,7 +614,6 @@ color: #fff;
     .bottom .container  .nav {
         display: none;
     }
-
     .bottom .container .nav-tog .line {
         width: 30px;
         height: 4px;
