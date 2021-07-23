@@ -52,17 +52,32 @@ function setActiveSlide() {
 }
 
 
-var repeat = function(activeClass){
+const repeat = function(activeClass){
          let active = document.getElementsByClassName('active');
          let i = 1;
 
-         var repeater = () => {
+         const repeater = () => {
              setTimeout(function(){
                  [...active].forEach((activeSlide) => {
                      activeSlide.classList.remove('active');
                  });
-
                  slides[i].classList.add('active');
+/*                  if(activeSlide = 'active'){
+                    ScrollReveal().reveal('.title-1',{
+                        delay:500
+                    });
+                    ScrollReveal().reveal('.p-1',{
+                        delay:1000
+                    });
+                    
+                    ScrollReveal().reveal('.btn-1',{
+                        delay:1500
+                    });
+                    ScrollReveal().reveal('.ani-fade-up',{
+                        opacity:0,
+                        easing:'ease-in'
+                    });  
+                 } */
                  i++;
 
                  if(slides.length == i){
