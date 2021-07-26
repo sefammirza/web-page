@@ -165,7 +165,7 @@ img {
   top: 12rem;
   -webkit-transition: all .5s;
   transition: all .5s;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .nav-header .navbar .navbar-list li .dropdown li {
@@ -178,6 +178,7 @@ img {
 
 .nav-header .navbar .navbar-list li:hover .dropdown {
   opacity: 1;
+  visibility: visible;
   top: 8rem;
 }
 
