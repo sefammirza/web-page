@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D-503</title>
     <link rel="stylesheet" href="./css/fontawesome-all.css">
+    <!-- own carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -68,7 +71,7 @@
 
 
 <main role="main">
-    <div class="main-slider">
+    <div class="main-slider owl-carousel owl-theme">
         <div class="single-slide">
             <img src="./img/slide_1.jpg">
             <div class="slide-overlay">
@@ -104,6 +107,22 @@
         </div>
     </div>
 </main>
+
+<!-- Jquery -->
+<script src="./js/jquery-3.6.0.slim.js"></script>
+<!-- owl carousel -->
+<script src="./js/owl.carousel.js"></script>
+
+<script>
+    $(document).ready(function(){
+ let owl =  $(".owl-carousel").owlCarousel({
+    autoplay :false, 
+    dots:false,
+    items:1
+ }
+ );
+});
+</script>
 
 </body>
 </html>
