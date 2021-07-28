@@ -72,7 +72,7 @@
 
 <main role="main">
     <div class="main-slider owl-carousel owl-theme">
-        <div class="single-slide">
+        <div class="single-slide" data-dot="<span>01.</span>">
             <img src="./img/slide_1.jpg">
             <div class="slide-overlay">
                 <div class="container">
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="single-slide">
+        <div class="single-slide" data-dot="<span>02.</span>">
             <img src="./img/slide_2.jpg">
             <div class="slide-overlay">
                 <div class="container">
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="single-slide">
+        <div class="single-slide" data-dot="<span>03.</span>">
             <img src="./img/slide_3.jpg">
             <div class="slide-overlay">
                 <div class="container">
@@ -113,16 +113,7 @@
 <!-- owl carousel -->
 <script src="./js/owl.carousel.js"></script>
 
-<script>
-    $(document).ready(function(){
- let owl =  $(".owl-carousel").owlCarousel({
-    autoplay :false, 
-    dots:false,
-    items:1
- }
- );
-});
-</script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
