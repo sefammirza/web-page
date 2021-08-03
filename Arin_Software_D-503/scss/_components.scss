@@ -46,6 +46,17 @@
 .rating{
     position: absolute;
     width: 3rem;
+    top: 1rem;
+    left: 1rem;
     height: 3rem;
     background-color: $light-color;
+    opacity: 0;
+    z-index: 100;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-family: $primary-font;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 50%;
+    color: $primary-color;
 }

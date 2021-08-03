@@ -29,6 +29,16 @@ $light-color:#FEFEFE;
         margin-left: 2rem;
     }
 }
+.text-light{
+    color:$light-color;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary{
+    color: $primary-color;
+}
+
 
 /* Mixins */
 @mixin flex-display($display, $align-items, $justify-content){
