@@ -126,6 +126,10 @@ body {
   width: 100%;
 }
 
+section {
+  padding: 8rem 0;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Changa", sans-serif;
   color: #E51515;
@@ -397,5 +401,65 @@ img {
 .latest-news-content .news-ticker p {
   color: #FEFEFE;
   font-size: 1.4rem;
+}
+
+/* Recent Games Section */
+.recent-games {
+  background-color: orange;
+}
+
+.recent-games-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-row-gap: 4rem;
+  grid-column-gap: 8rem;
+      grid-template-areas: 'item-1 item-1 item-1 item-2' 'item-3 item-4 item-5 item-6';
+}
+
+.recent-games-content .recent-game {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.recent-game-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item-1;
+}
+
+.recent-game-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: item-2;
+}
+
+.recent-game-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item-3;
+}
+
+.recent-game-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item-4;
+}
+
+.recent-game-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item-5;
+}
+
+.recent-game-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: item-6;
 }
 /*# sourceMappingURL=styles.css.map */
