@@ -88,7 +88,7 @@ section{
 
             a{
                 font-size: 2rem;
-                transition: all .5s;
+                transition: $general-transition;
             }
 
             &:hover a{
@@ -117,7 +117,7 @@ section{
             li{
                 line-height: 8rem;
                 position: relative;
-                transition: all .5s;
+                transition: $general-transition;
                 
                 .dropdown{
                     position: absolute;
@@ -225,7 +225,7 @@ section{
             border-radius: 4rem;
             background-color: transparent;
             margin-right: 1.3rem;
-            transition: all .5s;
+            transition: $general-transition;
 
             &.active, &:hover{
                 color: $primary-color;
@@ -285,9 +285,32 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-row-gap:4rem;
-        grid-column-gap:8rem;
+        grid-column-gap:4rem;
         grid-template-areas: 'item-1 item-1 item-1 item-2'
                            'item-3 item-4 item-5 item-6'  ;
+
+    .recent-game-featured{
+        @include flex-display(flex, center, space-between);
+
+        .recent-game-thumbnail{
+            height: 100%;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        .rating{
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+        }
+
+        .game-title{
+            font-size: 3rem !important;
+        }
+    }
 
     .recent-game{
         width: 100%;
@@ -300,7 +323,7 @@ section{
 
             img{
                 width: 100%;
-                transition: all .5s;
+                transition: $general-transition;
             }
 
             &::after{
@@ -313,7 +336,7 @@ section{
                 height: 100%;
                 visibility: hidden;
                 opacity: 0;
-                transition: all .5s;
+                transition:$general-transition;
             }
             
         }
@@ -328,12 +351,12 @@ section{
 
                 img{
                     transform: scale(1.1) rotate(5deg);
-                    transition: all .5s;
+                    transition:$general-transition;
                 }
 
                 .rating{
                     opacity: 1;
-                    transition: all .5s;
+                    transition: $general-transition;
                 }
             }
          
@@ -342,9 +365,11 @@ section{
             padding: 2rem;
 
             .game-title{
-                 margin-bottom: 2rem;
+                 margin-bottom: 1.2rem;
+                 font-size: 1.8rem;
+                 letter-spacing: 0;
                  a{
-                     transition: all .5s;
+                     transition:$general-transition;
 
                     &:hover{
                         color:darken($light-color, 40%);
@@ -354,11 +379,11 @@ section{
 
             .game-meta{
                 @include flex-display(flex, center, space-between);
-                font-size: 1.6rem;
+                font-size: 1.2rem;
 
                 .game-date{
                     color: $date-color;
-                    transition: all .5s;
+                    transition:$general-transition;
 
                     &:hover{
                         color:darken($date-color, 40%);
